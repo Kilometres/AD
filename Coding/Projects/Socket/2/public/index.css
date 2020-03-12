@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+* {
+  font-family: "Asap", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #272e38;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 15px 15px 15px 15px;
+}
+
+#btn {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+#btn2 {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+#adm {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+#ref {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+#tb1 {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#tb2 {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#tb3 {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#tb4 {
+  border: solid #fff 2px;
+  background: none;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#output {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

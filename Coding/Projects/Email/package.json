@@ -1,0 +1,16 @@
+{
+  "name": "email",
+  "version": "0.0.1",
+  "description": "",
+  "main": "email.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemailer": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kilometres",
+  "license": "ISC"
+}

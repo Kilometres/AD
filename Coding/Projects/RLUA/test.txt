@@ -1,0 +1,170 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local kiloGui = Instance.new("ScreenGui")
+local GuiFrame = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local bar = Instance.new("TextLabel")
+local x = Instance.new("TextButton")
+local ws = Instance.new("TextButton")
+local jp = Instance.new("TextButton")
+local rag = Instance.new("TextButton")
+local sit = Instance.new("TextButton")
+local health = Instance.new("TextButton")
+local OpenFrame = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+kiloGui.Parent = game.CoreGui
+
+GuiFrame.Name = "GuiFrame"
+GuiFrame.Parent = kiloGui
+GuiFrame.BackgroundColor3 = Color3.new(0.247059, 0.247059, 0.247059)
+GuiFrame.BackgroundTransparency = 0.40000000596046
+GuiFrame.Position = UDim2.new(0.066067934, 0, 0.305630028, 0)
+GuiFrame.Size = UDim2.new(0, 196, 0, 435)
+GuiFrame.Visible = false
+
+title.Name = "title"
+title.Parent = GuiFrame
+title.BackgroundColor3 = Color3.new(0, 0, 0)
+title.BackgroundTransparency = 0.40000000596046
+title.Size = UDim2.new(0, 196, 0, 30)
+title.Font = Enum.Font.SciFi
+title.Text = "Kilo's GUI"
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextSize = 20
+
+bar.Name = "bar"
+bar.Parent = GuiFrame
+bar.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+bar.BackgroundTransparency = 0.40000000596046
+bar.BorderSizePixel = 0
+bar.Position = UDim2.new(0, 0, 0.0701090842, 0)
+bar.Size = UDim2.new(0, 196, 0, 15)
+bar.Font = Enum.Font.SourceSans
+bar.Text = ""
+bar.TextColor3 = Color3.new(0, 0, 0)
+bar.TextSize = 14
+
+x.Name = "x"
+x.Parent = GuiFrame
+x.BackgroundColor3 = Color3.new(1, 1, 1)
+x.BackgroundTransparency = 1
+x.Position = UDim2.new(0.862244904, 0, 0, 0)
+x.Size = UDim2.new(0, 27, 0, 30)
+x.Font = Enum.Font.SciFi
+x.Text = "X"
+x.TextColor3 = Color3.new(1, 1, 1)
+x.TextSize = 20
+
+x.MouseButton1Click:Connect(function()
+  OpenFrame.Visible = true
+  GuiFrame.Visible = false
+end)
+
+ws.Name = "ws"
+ws.Parent = GuiFrame
+ws.BackgroundColor3 = Color3.new(0, 0, 0)
+ws.BackgroundTransparency = 0.40000000596046
+ws.Position = UDim2.new(0.0561224483, 0, 0.121465728, 0)
+ws.Size = UDim2.new(0, 173, 0, 50)
+ws.Font = Enum.Font.SciFi
+ws.Text = "Walkspeed"
+ws.TextColor3 = Color3.new(1, 1, 1)
+ws.TextSize = 20
+
+ws.MouseButton1Click:Connect(function()
+  hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+  hummy.WalkSpeed = 100
+end)
+
+jp.Name = "jp"
+jp.Parent = GuiFrame
+jp.BackgroundColor3 = Color3.new(0, 0, 0)
+jp.BackgroundTransparency = 0.40000000596046
+jp.Position = UDim2.new(0.0561224483, 0, 0.259877503, 0)
+jp.Size = UDim2.new(0, 173, 0, 50)
+jp.Font = Enum.Font.SciFi
+jp.Text = "Jump Power"
+jp.TextColor3 = Color3.new(1, 1, 1)
+jp.TextSize = 20
+
+jp.MouseButton1Click:Connect(function()
+hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+hummy.JumpPower = 100
+end)
+
+rag.Name = "rag"
+rag.Parent = GuiFrame
+rag.BackgroundColor3 = Color3.new(0, 0, 0)
+rag.BackgroundTransparency = 0.40000000596046
+rag.Position = UDim2.new(0.0561224483, 0, 0.39370349, 0)
+rag.Size = UDim2.new(0, 173, 0, 50)
+rag.Font = Enum.Font.SciFi
+rag.Text = "Reset WS/JP"
+rag.TextColor3 = Color3.new(1, 1, 1)
+rag.TextSize = 20
+
+rag.MouseButton1Click:Connect(function()
+  hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+  hummy.JumpPower = 50
+  hummy.WalkSpeed = 16
+end)
+
+sit.Name = "sit"
+sit.Parent = GuiFrame
+sit.BackgroundColor3 = Color3.new(0, 0, 0)
+sit.BackgroundTransparency = 0.40000000596046
+sit.Position = UDim2.new(0.0561224483, 0, 0.53163451, 0)
+sit.Size = UDim2.new(0, 173, 0, 50)
+sit.Font = Enum.Font.SciFi
+sit.Text = "Sit"
+sit.TextColor3 = Color3.new(1, 1, 1)
+sit.TextSize = 20
+
+sit.MouseButton1Click:Connect(function()
+hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+hummy.Sit = true
+end)
+
+health.Name = "health"
+health.Parent = GuiFrame
+health.BackgroundColor3 = Color3.new(0, 0, 0)
+health.BackgroundTransparency = 0.40000000596046
+health.Position = UDim2.new(0.0561224483, 0, 0.67186439, 0)
+health.Size = UDim2.new(0, 173, 0, 50)
+health.Font = Enum.Font.SciFi
+health.Text = "Health"
+health.TextColor3 = Color3.new(1, 1, 1)
+health.TextSize = 20
+
+health.MouseButton1Click:Connect(function()
+  hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+  hummy.MaxHealth = 1000
+  hummy.Health = 999
+end)
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = kiloGui
+OpenFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenFrame.BackgroundTransparency = 1
+OpenFrame.Position = UDim2.new(0, 0, 0.290884733, 0)
+OpenFrame.Size = UDim2.new(0, 100, 0, 40)
+OpenFrame.Visible = true
+
+open.Name = "open"
+open.Parent = OpenFrame
+open.BackgroundColor3 = Color3.new(0, 0, 0)
+open.BackgroundTransparency = 0.40000000596046
+open.Position = UDim2.new(0, 0, 0.297587126, 0)
+open.Size = UDim2.new(0, 87, 0, 30)
+open.Font = Enum.Font.SciFi
+open.Text = "Open"
+open.TextColor3 = Color3.new(1, 1, 1)
+open.TextSize = 20
+
+open.MouseButton1Click:Connect(function()
+  OpenFrame.Visible = false
+  GuiFrame.Visible = true
+end)
+-- Scripts:

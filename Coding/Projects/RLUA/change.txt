@@ -1,0 +1,46 @@
+
+KiloGUI.Parent = game.Workspace
+    \/
+KiloGUI.Parent = game.CoreGui
+
++ MainFrame.Visible = false
+
+
+btnname.MouseButton1Down:connect(function()
+script
+end)
+
+
+close.MouseButton1Down:connect(function()
+OtherFrame.Visible = true
+MainFrame.Visible = false
+end)
+
+
+open.MouseButton1Down:connect(function()
+OtherFrame.Visible = false
+MainFrame.Visible = true
+end)
+
+||-Nah-||
+
+local lplr = plrs.LocalPlayer
+local speed = 20
+
+lplr.Character.Humanoid.WalkSpeed = speed
+
+lplr.Character.Humanoid:GetPropertyChangedSignal("WalkSpeed"):connect(function()
+       if lplr.Character.Humanoid.WalkSpeed ~= speed then
+           lplr.Character.Humanoid.WalkSpeed = speed
+       end
+end)
+
+lplr.CharacterAdded:Connect(function(characterModel)
+       wait(0.5)
+       characterModel.Humanoid.WalkSpeed = speed
+       characterModel.Humanoid:GetPropertyChangedSignal("WalkSpeed"):connect(function()
+           if characterModel.Humanoid.WalkSpeed ~= speed then
+               characterModel.Humanoid.WalkSpeed = speed
+           end
+       end)
+end)

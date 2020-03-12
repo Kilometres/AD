@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hex Color Page</title>
+  </head>
+  <body>
+    <script src="jscolor.js"></script>
+    <input class="jscolor" id="color" value="007FFF">
+    <button id="btn" onclick="color()">Change</button>
+    <script type="text/javascript">
+      function color() {
+        document.body.style.backgroundColor = "#"+document.getElementById('color');
+      }
+    </script>
+  </body>
+</html>

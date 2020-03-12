@@ -1,0 +1,14 @@
+{
+  "name": "nah",
+  "version": "0.0.1",
+  "description": "Testing projects with electron.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kilometres",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^4.0.1"
+  }
+}

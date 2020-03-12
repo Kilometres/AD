@@ -1,0 +1,12 @@
+* {
+  background: #2e2e2e;
+  color: #007FFF;
+  font-family: impact;
+}
+
+*:hover {
+  background: #4e4e4e;
+
+body {
+  background-image: url("images/otherbg.jpg");
+}

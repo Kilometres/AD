@@ -1,0 +1,23 @@
+body {
+  background-color: #1e1e1e;
+}
+
+#nav {
+  -webkit-app-region: drag;
+
+  background-color: #f3f3f3;
+  padding: 15px;
+  margin: 0px;
+  width: 100%;
+}
+.li {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}

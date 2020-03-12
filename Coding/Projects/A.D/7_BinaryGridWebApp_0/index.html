@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Binary Grid Web App</title>
+  </head>
+  <body>
+    <div class="cont">
+      <button id="a32" onclick="bin('a32', 'a')" class="a">0</button>
+      <button id="a16" onclick="bin('a16', 'a')" class="a">0</button>
+      <button id="a8" onclick="bin('a8', 'a')" class="a">0</button>
+      <button id="a4" onclick="bin('a4', 'a')" class="a">0</button>
+      <button id="a2" onclick="bin('a2', 'a')" class="a">0</button>
+      <button id="a1" onclick="bin('a1', 'a')" class="a">0</button>
+      <button id="aa" class="a">0</button>
+      <button id="ar" onclick="ran('a')" class="a">0</button>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+  <style>
+    body {
+      background-color: #263238;
+      display: grid | inline-grid;
+    }
+    .cont{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .a {
+      background-color: #263238;
+      border-color: #408D32;
+      border-style: solid;
+      border-radius: 8px;
+      border-width: 3px;
+      font-size: 30px;
+      color: #FEFEFE;
+      outline: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: inline;
+    }
+    #ar {
+      margin-left: 30px;
+      text-align: center;
+      width: 56px
+    }
+  </style>
+</html>

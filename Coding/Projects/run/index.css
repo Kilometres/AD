@@ -1,0 +1,19 @@
+#in {
+  border: 2px black solid;
+  border-radius: 4px;
+  height: 100px;
+}
+
+#run {
+  border: 2px black solid;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 20px;
+  background: none;
+}
+
+#out {
+  border: 2px black solid;
+  border-radius: 4px;
+  height: 100px;
+}

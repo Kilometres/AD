@@ -1,0 +1,14 @@
+{
+  "name": "pcapp",
+  "version": "0.0.1",
+  "description": "Basic desktop app.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kilometres",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.13"
+  }
+}

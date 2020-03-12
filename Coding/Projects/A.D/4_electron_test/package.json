@@ -1,0 +1,14 @@
+{
+  "name": "control_pannel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "Kilo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.0.0"
+  }
+}

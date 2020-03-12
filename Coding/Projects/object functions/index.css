@@ -1,0 +1,20 @@
+.box {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  width: 80%;
+  height: 40%;
+  overflow: scroll;
+}
+
+.box2 {
+  position: absolute;
+  top: -15%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border: 2px solid black;
+  width: 80%;
+  height: 40%;
+}

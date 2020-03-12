@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Veranda');
+
+* {
+  font-family: 'Veranda', sans-serif;
+  user-select: none;
+}
+
+#setUp tr:nth-child(even) {
+  background-color: #9CBEE0;
+  color: white;
+}
+
+#setUp tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+#setUp tr:hover {
+  background-color: #99B0C7;
+}
+
+#setUp th {
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+  background-color: #007FFF;
+  color: white;
+}
+
+#setUp td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+#setUp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.container input {
+  display: none;
+}
+
+.container {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.container .checkmark {
+  display: block;
+  position: absolute;
+  background-color: #ccc;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: 70px;
+  transform: translate(0, -50%);
+  border-radius: 5px;
+}
+
+.container .checkmark:hover {
+  background-color: #eee;
+}
+
+.container input:checked + .checkmark {
+  background-color: #50ff50;
+}
+
+.container input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 16px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

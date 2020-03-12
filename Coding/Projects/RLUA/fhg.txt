@@ -1,0 +1,29 @@
+local m = game.Players.LocalPlayer:GetMouse()
+local hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+local torso = game.Players.LocalPlayer.Character.Torso
+local enabled = false
+
+m.KeyDown:connect(function(k)
+    k = k:lower()
+    if k == "v" then
+        if enabled == false then
+          enabled = true
+        elseif enabled == true then
+          enabled = false
+        end
+    end
+    if k == "n" then
+        hummy.Health = 0
+    end
+
+    while enabled == true do
+      hummy.PlatformStand = true
+      torso.Anchored = true
+      repeat wait(1/44)
+    end
+    while enabled == false do
+      hummy.PlatformStand = false
+      torso.Anchored = false
+      wait(1/44)
+    end
+end)

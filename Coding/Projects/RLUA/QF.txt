@@ -1,0 +1,68 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local QF = Instance.new("ScreenGui")
+local f1 = Instance.new("Frame")
+local title1 = Instance.new("TextLabel")
+local version = Instance.new("TextLabel")
+local tb1 = Instance.new("TextButton")
+
+local h = game:GetService("Players").LocalPlayer.Character.Humanoid
+
+--Properties:
+QF.Name = "QF"
+QF.Parent = game.CoreGui
+
+f1.Name = "f1"
+f1.Parent = QF
+f1.BackgroundColor3 = Color3.new(0, 0, 0)
+f1.BackgroundTransparency = 0.60000002384186
+f1.BorderColor3 = Color3.new(1, 1, 1)
+f1.BorderSizePixel = 6
+f1.Position = UDim2.new(0, 0, 0.223860592, 0)
+f1.Size = UDim2.new(0, 177, 0, 220)
+
+title1.Name = "title1"
+title1.Parent = f1
+title1.BackgroundColor3 = Color3.new(1, 1, 1)
+title1.BackgroundTransparency = 1
+title1.BorderSizePixel = 0
+title1.Size = UDim2.new(0, 110, 0, 25)
+title1.Font = Enum.Font.SciFi
+title1.Text = "QuickFire"
+title1.TextColor3 = Color3.new(1, 1, 1)
+title1.TextSize = 20
+
+version.Name = "version"
+version.Parent = f1
+version.BackgroundColor3 = Color3.new(1, 1, 1)
+version.BackgroundTransparency = 1
+version.BorderSizePixel = 0
+version.Position = UDim2.new(0.621468902, 0, 0, 0)
+version.Size = UDim2.new(0, 67, 0, 25)
+version.Font = Enum.Font.SciFi
+version.Text = "V 1"
+version.TextColor3 = Color3.new(1, 1, 1)
+version.TextSize = 20
+
+tb1.Name = "tb1"
+tb1.Parent = f1
+tb1.BackgroundColor3 = Color3.new(0, 0, 0)
+tb1.BackgroundTransparency = 0.60000002384186
+tb1.Position = UDim2.new(0.0564971752, 0, 0.145454541, 0)
+tb1.Size = UDim2.new(0, 157, 0, 176)
+tb1.Font = Enum.Font.SciFi
+tb1.Text = "Press"
+tb1.TextColor3 = Color3.new(1, 1, 1)
+tb1.TextScaled = true
+tb1.TextSize = 15
+tb1.TextWrapped = true
+
+tb1.MouseButton1Click:Connect(function()
+  h = game:GetService("Players").LocalPlayer.Character.Humanoid
+  h.JumpPower = 60
+  h.WalkSpeed = 50
+  h.MaxHealth = 500
+  h.Health = 500
+end)
+-- Scripts:
