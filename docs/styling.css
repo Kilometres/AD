@@ -53,8 +53,39 @@ a {
   word-wrap: normal;
 }
 
-p {
+.deftxt {
+  color: #F6F6F6;
+  font-family: 'Roboto Mono';
+  display: inline;
+}
+
+.header1 {
+  font-size: 20px;
+}
+
+.tag {
+  color: #A6A6A6;
+  font-family: 'Roboto Mono';
+  display: inline;
+  margin-left: -10px;
+}
+
+.quote {
   color: #F6F6F6;
   font-family: 'Roboto Mono';
   text-align: center;
+}
+
+.btn1 {
+  border-color: #F6F6F6;
+  background: none;
+  color: #F6F6F6;
+  font-family: 'Roboto Mono';
+  outline: none;
+}
+
+.quotebtn {
+  position: absolute;
+  top: 250px;
+  left: 25%;
 }
