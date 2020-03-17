@@ -21,10 +21,6 @@ a {
   color: inherit;
 }
 
-#act {
-  text-decoration: underline;
-}
-
 #navlist {
   list-style: none;
   padding: none;
@@ -45,16 +41,4 @@ a {
   font-size: 60px;
   font-family: 'Baloo Chettan 2';
   margin-left: none;
-}
-
-.wrapper {
-  width: 70%;
-  margin: 160px auto 0 auto;
-  word-wrap: normal;
-}
-
-p {
-  color: #F6F6F6;
-  font-family: 'Roboto Mono';
-  text-align: center;
 }
