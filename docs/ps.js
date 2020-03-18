@@ -4,7 +4,7 @@ var p = [
     'title' : 'Book Exploit',
     'pic' : 'https://i.imgur.com/DhTA5rL.png',
     'desc' : 'Test Test',
-    'link' : './_OtherPages/_dlbook/index.html'
+    'link' : './_OtherPages/_dlbook/book.html'
   }
 ];
 
