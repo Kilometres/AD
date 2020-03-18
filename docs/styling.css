@@ -89,3 +89,7 @@ a {
   top: 250px;
   left: 25%;
 }
+
+.cap {
+  word-wrap: break-word;
+}
