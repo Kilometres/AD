@@ -11,6 +11,19 @@
 			</ul>
 		</header>
 
+		<div class="wrapper">
+			<p class="deftxt msg">Oh dear, this link isn’t working.</p><br>
+			<ul class="reasons">
+				<li>Mistyped URL</li>
+				<li>Copy-and-paste error</li>
+				<li>Broken link</li>
+				<li>Truncated link</li>
+				<li>Moved content</li>
+				<li>Deleted content</li>
+			</ul> <br><br>
+			<p class="deftxt link"><a href="./index.html">Return to home</a></p>
+		</div>
+
 		<style media="screen">
 		@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Roboto+Mono&display=swap');
 
@@ -33,6 +46,11 @@
 		a {
 			text-decoration: none;
 			color: inherit;
+		}
+
+		.link {
+			font-size: 20px;
+			text-decoration: underline;
 		}
 
 		#act {
@@ -71,6 +89,17 @@
 			color: #F6F6F6;
 			font-family: 'Roboto Mono';
 			display: inline;
+		}
+
+		.reasons {
+			color: #F6F6F6;
+			font-family: 'Roboto Mono';
+			display: inline;
+			list-style: circle;
+		}
+
+		.msg {
+			font-size: 25px;
 		}
 
 		.header1 {
