@@ -2,17 +2,28 @@ var p = [
   {
     'id' : '0',
     'title' : 'Book Exploit',
-    'pic' : 'https://preview.redd.it/xwhaxojjg5t11.png?width=960&crop=smart&auto=webp&s=55705f9ac64020abb9c3488c1da54564c85f0f8c',
-    'desc' : 'Test Test'
+    'pic' : 'https://i.imgur.com/DhTA5rL.png',
+    'desc' : 'Test Test',
+    'link' : './_OtherPages/_dlbook/index.html'
   }
 ];
 
-function templ(id, title, pic, desc) {
-  return `<br><span class="tag">#</span><p class="deftxt header1">${title}</p><br><br>
-  <p class="deftxt">${desc}</p><br>
-  <p class="deftxt">${id}</p><br><br><br>`
+function templ(id) {
+  let title = p[id].title;
+  let pic = p[id].pic;
+  let desc = p[id].desc;
+  let link = p[id].link;
+
+  return `<br><span class="tag">${id}</span><p class="deftxt header1"><a href="${link}">${title}</a></p><br><br>
+  <a href="${link}"><img src="${pic}" alt="Photo of ${title}" width="100%"></img></a><br>
+  <p class="deftxt">${desc}</p><br><br>`
 }
 
 var wrap = document.getElementsByClassName('wrapper')[0];
+function buildP() {
+  for (let i = 0; i < p.length; i++) {
+    wrap.innerHTML += templ(i)
+  }
+}
 
-wrap.innerHTML = templ(p[0].id, p[0].title, p[0].pic, p[0].desc)
+buildP();
