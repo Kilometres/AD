@@ -5,6 +5,13 @@ var p = [
     'pic' : 'https://i.imgur.com/DhTA5rL.png',
     'desc' : 'Test Test',
     'link' : './OtherPages/dlbook/book.html'
+  },
+  {
+    'id' : '1',
+    'title' : 'Luella who',
+    'pic' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqqhPAzTVTK0S0n2EpzAWxXsbEC--oUj5xIoL4ADy2BJp_7c3E',
+    'desc' : 'Mad Ladette',
+    'link' : '#'
   }
 ];
 
