@@ -8,9 +8,9 @@ var p = [
   },
   {
     'id' : '1',
-    'title' : 'Luella who',
-    'pic' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqqhPAzTVTK0S0n2EpzAWxXsbEC--oUj5xIoL4ADy2BJp_7c3E',
-    'desc' : 'Mad Ladette',
+    'title' : 'Example Project',
+    'pic' : 'https://i.kym-cdn.com/entries/icons/original/000/028/315/cover.jpg',
+    'desc' : 'This is a test, using objects in JavaScript to produce projects rather than manually typing out the HTML and CSS.',
     'link' : '#'
   }
 ];
