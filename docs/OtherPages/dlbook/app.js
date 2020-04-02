@@ -27,10 +27,3 @@ function dig(num) {
   }
   return num
 }
-
-// CSS / Sizing of Frame
-var iw = window.innerWidth;
-var w = 3*(iw/4);
-
-frame.style.width = w+'px';
-frame.style.height = frame.style.width*(4/3);

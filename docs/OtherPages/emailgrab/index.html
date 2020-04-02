@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Outlook Profile Pic</title>
+  </head>
+  <body>
+    <div class="cont">
+    <input id="inp" type="text" placeholder="Enter YearJoined+SurName+FirstInitial">
+    <button id="btn" type="button" onclick="find()">Search</button>
+  </div>
+    <script type="text/javascript">
+      var inp = document.getElementById('inp');
+      var btn = document.getElementById('btn');
+
+      function find() {
+        window.location.href = 'https://outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email=' + inp.value + '@students.prioryacademy.co.uk&size=HR240x240&cb=637214139701797063'
+      }
+
+      inp.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          find()
+        }
+      });
+    </script>
+    <style>
+      body {
+        background: #2e2e2e;
+        text-align: center;
+      }
+      .cont {
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        transform: translate(-50%, -50%)
+      }
+      #btn {
+        color: white;
+        background: transparent;
+        border: solid 2px white;
+        padding: 3px;
+        font-size: 20px;
+      }
+      #inp {
+        color: white;
+        background: transparent;
+        border: solid 2px white;
+        padding: 3px;
+        font-size: 20px;
+        width: 350px;
+      }
+    </style>
+  </body>
+</html>

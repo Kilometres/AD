@@ -4,7 +4,7 @@ var p = [
     'title' : 'Book Exploit',
     'pic' : 'https://i.imgur.com/DhTA5rL.png',
     'desc' : 'Test Test',
-    'link' : './OtherPages/dlbook/book.html'
+    'link' : './OtherPages/dlbook/index.html'
   },
   {
     'id' : '1',
@@ -12,6 +12,13 @@ var p = [
     'pic' : 'https://i.kym-cdn.com/entries/icons/original/000/028/315/cover.jpg',
     'desc' : 'This is a test, using objects in JavaScript to produce projects rather than manually typing out the HTML and CSS.',
     'link' : '#'
+  },
+  {
+    'id' : '3',
+    'title' : 'Outlook School Profile Picture Grabber',
+    'pic' : 'https://i.imgur.com/UBsyaOj.png',
+    'desc' : 'This is solely for experimenting this has no use to anyone, it is able to grab the profile picture of emails under a preset domain.',
+    'link' : './OtherPages/emailgrab/index.html'
   }
 ];
 
