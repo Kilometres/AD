@@ -21,6 +21,22 @@ var quotes = {
   '9b' : '“A sofar.”',
   '10a' : '“Why is North Korea so accurate at measuring microscopic distances?”',
   '10b' : '“They have a supreme ruler”',
+  '11a' : '“Do you know why I hate speed, distance and time?”',
+  '11b' : '“Because it’s so t = d/s”',
+  '12a' : '“How does a Muslim boxer keep his distance?”',
+  '12b' : '“Hijabs”',
+  '13a' : '“My doctor told me to distance myself from drugs.”',
+  '13b' : '“So I bought a six foot straw.”',
+  '14a' : '“Why were B and D long distance lovers?”',
+  '14b' : '“Because there was a C between them.”',
+  '15a' : '“I\'ve built a spice catapult that is capable of seasoning a steak from a distance of 100 yards.”',
+  '15b' : '“It\'s a little hard to aim but there\'s no sense crying over every missed steak.”',
+  '16a' : '“Everyone is attractive.”',
+  '16b' : '“It only depends on their mass and distance between you and the person.”',
+  '17a' : '“What type of underwear do long distance runners wear?”',
+  '17b' : '“Marathongs”',
+  '18a' : '“Where Did The Crazy Distance Runner Go To Run?”',
+  '18b' : '“The Psycho-Path.”',
 }
 
 function rand(num) {
