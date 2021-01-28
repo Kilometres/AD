@@ -9,7 +9,7 @@
   "author": "Kilo",
   "license": "ISC",
   "dependencies": {
-    "electron": "^7.0.0",
+    "electron": "^9.4.0",
     "electron-packager": "^14.1.0"
   }
 }
