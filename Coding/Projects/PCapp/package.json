@@ -9,6 +9,6 @@
   "author": "Kilometres",
   "license": "ISC",
   "dependencies": {
-    "electron": "^3.0.13"
+    "electron": "^9.4.0"
   }
 }
